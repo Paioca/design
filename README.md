@@ -95,6 +95,7 @@ Condensed UI        →  Roboto Condensed (400, 500, 700)
 | `Icon` | 50+ ícones de UI em SVG inline (currentColor, sizes xs-2xl) |
 | `BrandIcon` | 7 ilustrações temáticas da marca (handshake, funnel, workflow…) |
 | `Mark` | 12 grafismos abstratos (brackets, setas, plus, growth-steps) |
+| `Illustration` | 6 cenas isométricas em SVG (estilo Winning By Design adaptado) |
 | `Section` | default, subtle, dark, brand |
 | `Hero` | light, dark, brand · align left/center |
 | `Nav` | light, dark, sticky |
@@ -107,6 +108,9 @@ Condensed UI        →  Roboto Condensed (400, 500, 700)
 | UI / interação (botões, navegação, status) | `<Icon />` | SVG inline, currentColor | `arrow-right`, `chevron-down`, `check`, `x`, `menu`, `search`, `mail`, `rocket`, `chart`, `target` |
 | Cards de valor / "o que fazemos" | `<BrandIcon />` | PNG ilustrativo da marca | `handshake`, `deal-handshake`, `funnel`, `workflow`, `team-growth`, `briefcase-swap` |
 | Acentos visuais / dividers | `<Mark />` | PNG grafismo abstrato | `arrow-up-right`, `bracket-frame`, `plus`, `growth-steps`, `chevron-circle` |
+| Cenas isométricas para sections "soluções" / dark mode | `<Illustration />` | SVG inline isométrico | `bowtie-journey`, `growth-stairs`, `map-route`, `connected-system`, `stack-build`, `funnel-wings` |
+
+> Para criar **novas ilustrações** mantendo o padrão (incluindo prompt-template para gerar com IA), veja [`docs/CREATING_VISUALS.md`](./docs/CREATING_VISUALS.md).
 
 ---
 

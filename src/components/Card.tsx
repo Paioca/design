@@ -1,7 +1,7 @@
 import { HTMLAttributes, forwardRef } from "react";
 import { cn } from "../lib/cn";
 
-type Variant = "default" | "elevated" | "outline" | "filled" | "brand";
+type Variant = "default" | "elevated" | "outline" | "filled" | "brand" | "solution";
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   variant?: Variant;
@@ -13,6 +13,9 @@ const variants: Record<Variant, string> = {
   outline: "bg-transparent border-2 border-true-800",
   filled: "bg-true-50",
   brand: "bg-rev-true-gradient text-white",
+  solution:
+    "bg-true-950 text-white border border-true-800 shadow-2xl " +
+    "ring-1 ring-white/5 hover:border-rev-500/50 transition-colors",
 };
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(

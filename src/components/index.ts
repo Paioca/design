@@ -32,6 +32,12 @@ export {
   type MarkName,
   type MarkProps,
 } from "./Mark";
+export {
+  Illustration,
+  illustrationNames,
+  type IllustrationName,
+  type IllustrationProps,
+} from "./Illustration";
 export { Section, type SectionProps } from "./Section";
 export { Hero, type HeroProps } from "./Hero";
 export { Nav, type NavLink, type NavProps } from "./Nav";
