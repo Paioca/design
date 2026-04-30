@@ -92,10 +92,21 @@ Condensed UI        →  Roboto Condensed (400, 500, 700)
 | `Card` | default, elevated, outline, filled, brand (gradiente) |
 | `Badge` | rev, true, subtle, outline, success, warning, danger |
 | `Logo` | primary, charcoal, orange, icon, icon-orange |
+| `Icon` | 50+ ícones de UI em SVG inline (currentColor, sizes xs-2xl) |
+| `BrandIcon` | 7 ilustrações temáticas da marca (handshake, funnel, workflow…) |
+| `Mark` | 12 grafismos abstratos (brackets, setas, plus, growth-steps) |
 | `Section` | default, subtle, dark, brand |
 | `Hero` | light, dark, brand · align left/center |
 | `Nav` | light, dark, sticky |
 | `Footer` | colunas configuráveis |
+
+### Sistema de ícones (3 níveis)
+
+| Quando usar | Componente | Formato | Exemplos |
+|---|---|---|---|
+| UI / interação (botões, navegação, status) | `<Icon />` | SVG inline, currentColor | `arrow-right`, `chevron-down`, `check`, `x`, `menu`, `search`, `mail`, `rocket`, `chart`, `target` |
+| Cards de valor / "o que fazemos" | `<BrandIcon />` | PNG ilustrativo da marca | `handshake`, `deal-handshake`, `funnel`, `workflow`, `team-growth`, `briefcase-swap` |
+| Acentos visuais / dividers | `<Mark />` | PNG grafismo abstrato | `arrow-up-right`, `bracket-frame`, `plus`, `growth-steps`, `chevron-circle` |
 
 ---
 

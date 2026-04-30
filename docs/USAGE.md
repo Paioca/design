@@ -107,6 +107,62 @@ export default function Landing() {
 </button>
 ```
 
+## Ícones — qual componente usar?
+
+```tsx
+import { Icon, BrandIcon, Mark } from "./components";
+
+// 1. Icon — UI / interação. SVG inline, herda currentColor.
+<button className="text-rev-500 hover:text-rev-600">
+  Próximo <Icon name="arrow-right" size="sm" />
+</button>
+
+// 2. BrandIcon — ilustração temática da marca. Use em cards de valor.
+<Card>
+  <BrandIcon name="funnel" size="lg" />
+  <CardTitle>Otimização de funil</CardTitle>
+</Card>
+
+// 3. Mark — grafismo abstrato da identidade. Use como acento.
+<div className="flex items-center gap-2">
+  <Mark name="arrow-up-right" size="sm" />
+  <span>Crescimento de 240% em 6 meses</span>
+</div>
+```
+
+### Lista de "o que fazemos" usando BrandIcon
+
+```tsx
+const services = [
+  { icon: "funnel", title: "Diagnóstico de funil" },
+  { icon: "team-growth", title: "Capacitação de time" },
+  { icon: "workflow", title: "Desenho de processo" },
+  { icon: "deal-handshake", title: "Fechamento consultivo" },
+] as const;
+
+<div className="grid md:grid-cols-4 gap-6">
+  {services.map((s) => (
+    <Card key={s.title}>
+      <BrandIcon name={s.icon} size="lg" />
+      <CardTitle className="mt-4">{s.title}</CardTitle>
+    </Card>
+  ))}
+</div>
+```
+
+### Lista com checks usando Icon
+
+```tsx
+<ul className="space-y-2">
+  <li className="flex items-center gap-2">
+    <Icon name="check-circle" className="text-emerald-500" /> Diagnóstico em 5 dias
+  </li>
+  <li className="flex items-center gap-2">
+    <Icon name="check-circle" className="text-emerald-500" /> Plano priorizado
+  </li>
+</ul>
+```
+
 ## Cabeçalho típico de landing
 
 ```tsx

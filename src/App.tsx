@@ -12,6 +12,12 @@ import {
   Hero,
   Nav,
   Footer,
+  Icon,
+  iconNames,
+  BrandIcon,
+  brandIconNames,
+  Mark,
+  markNames,
 } from "./components";
 
 const palette = [
@@ -114,6 +120,131 @@ export default function App() {
               reforçando o conceito de algo descomplicado.
             </p>
           </div>
+        </div>
+      </Section>
+
+      {/* Brand icons (themed illustrations) */}
+      <Section>
+        <Badge variant="subtle" className="mb-4">Ícones · Temáticos</Badge>
+        <h2 className="font-display font-black text-4xl mb-2">BrandIcon</h2>
+        <p className="font-sans text-true-600 mb-8 max-w-2xl">
+          Ilustrações de conceito com a moldura "bracket" da marca. Use em cards de valor,
+          seções "o que fazemos" e blocos de serviço.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+          {brandIconNames.map((name) => (
+            <div
+              key={name}
+              className="flex flex-col items-center gap-3 p-4 rounded-2xl bg-true-50 hover:bg-true-100 transition-colors"
+            >
+              <BrandIcon name={name} size="md" />
+              <code className="font-sans text-xs text-true-700 text-center">{name}</code>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Brand marks (graphic elements) */}
+      <Section tone="subtle">
+        <Badge variant="subtle" className="mb-4">Ícones · Grafismos</Badge>
+        <h2 className="font-display font-black text-4xl mb-2">Mark</h2>
+        <p className="font-sans text-true-600 mb-8 max-w-2xl">
+          Elementos gráficos abstratos da identidade — brackets, setas, plus, escada de crescimento.
+          Use como acento decorativo, divisor de seção ou destaque visual.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {markNames.map((name) => (
+            <div
+              key={name}
+              className="flex flex-col items-center justify-end gap-3 p-4 rounded-2xl bg-white border border-true-100 h-36"
+            >
+              <Mark name={name} size="md" />
+              <code className="font-sans text-xs text-true-700 text-center">{name}</code>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* System icons */}
+      <Section>
+        <Badge variant="subtle" className="mb-4">Ícones · Sistema</Badge>
+        <h2 className="font-display font-black text-4xl mb-2">Icon (UI)</h2>
+        <p className="font-sans text-true-600 mb-8 max-w-2xl">
+          {iconNames.length} ícones de linha, monocromáticos, em SVG inline. Herdam <code>currentColor</code>{" "}
+          e escalam perfeitamente. Use em botões, navegação, labels, tabelas.
+        </p>
+        <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-3">
+          {iconNames.map((name) => (
+            <div
+              key={name}
+              className="flex flex-col items-center gap-2 p-4 rounded-xl border border-true-100 hover:border-rev-300 hover:text-rev-500 text-true-700 transition-colors"
+            >
+              <Icon name={name} size="lg" />
+              <code className="font-sans text-[10px] text-true-500 text-center break-all">{name}</code>
+            </div>
+          ))}
+        </div>
+
+        {/* Icon usage examples */}
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <Card>
+            <CardHeader>
+              <CardTitle>Em botões</CardTitle>
+              <CardDescription>Tamanho e cor herdam do contexto.</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-3 items-start">
+              <Button>
+                Começar agora <Icon name="arrow-right" size="sm" />
+              </Button>
+              <Button variant="outline">
+                <Icon name="download" size="sm" /> Baixar manual
+              </Button>
+              <Button variant="ghost" size="sm">
+                <Icon name="settings" size="sm" /> Configurações
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Em listas</CardTitle>
+              <CardDescription>Status, contato, dados.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-true-700">
+                <li className="flex items-center gap-2">
+                  <Icon name="check-circle" className="text-emerald-500" /> Diagnóstico em 5 dias
+                </li>
+                <li className="flex items-center gap-2">
+                  <Icon name="check-circle" className="text-emerald-500" /> Plano priorizado
+                </li>
+                <li className="flex items-center gap-2">
+                  <Icon name="x-circle" className="text-true-300" /> Sem fidelidade longa
+                </li>
+                <li className="flex items-center gap-2">
+                  <Icon name="mail" className="text-rev-500" /> contato@revtrue.com
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card variant="brand">
+            <CardHeader>
+              <CardTitle className="text-white">Em destaque</CardTitle>
+              <CardDescription className="text-white/80">
+                Combinados com tipografia e cor da marca.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex items-start gap-3">
+              <Icon name="rocket" size="2xl" />
+              <div>
+                <p className="font-display font-bold text-xl">Crescimento ascendente</p>
+                <p className="font-sans text-sm text-white/80">
+                  Resultados reais, não promessas vazias.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </Section>
 
