@@ -95,7 +95,6 @@ Condensed UI        →  Roboto Condensed (400, 500, 700)
 | `Icon` | 50+ ícones de UI em SVG inline (currentColor, sizes xs-2xl) |
 | `BrandIcon` | 7 ilustrações temáticas da marca (handshake, funnel, workflow…) |
 | `Mark` | 12 grafismos abstratos (brackets, setas, plus, growth-steps) |
-| `Illustration` | 23 cenas isométricas em SVG cobrindo a narrativa RevTrue (funil, pilares, sessão, infra, problema/caminho) |
 | `Section` | default, subtle, dark, brand |
 | `Hero` | light, dark, brand · align left/center |
 | `Nav` | light, dark, sticky |
@@ -108,9 +107,6 @@ Condensed UI        →  Roboto Condensed (400, 500, 700)
 | UI / interação (botões, navegação, status) | `<Icon />` | SVG inline, currentColor | `arrow-right`, `chevron-down`, `check`, `x`, `menu`, `search`, `mail`, `rocket`, `chart`, `target` |
 | Cards de valor / "o que fazemos" | `<BrandIcon />` | PNG ilustrativo da marca | `handshake`, `deal-handshake`, `funnel`, `workflow`, `team-growth`, `briefcase-swap` |
 | Acentos visuais / dividers | `<Mark />` | PNG grafismo abstrato | `arrow-up-right`, `bracket-frame`, `plus`, `growth-steps`, `chevron-circle` |
-| Cenas isométricas para sections "soluções" / dark mode | `<Illustration />` | SVG inline isométrico | **Funil:** `funnel-marketing`, `funnel-qualification`, `funnel-sales`, `funnel-postsale`, `funnel-expansion` · **Pilares:** `pillar-ai`, `pillar-data`, `pillar-method` · **Sessão:** `revenue-session`, `priority-plan`, `bottleneck-diagnosis` · **Infra:** `automation-flow`, `commercial-ritual`, `goal-target`, `connected-system` · **Problema/Caminho:** `revenue-leak`, `path-solo`, `path-together` · **Base:** `bowtie-journey`, `growth-stairs`, `map-route`, `stack-build`, `funnel-wings` |
-
-> Para criar **novas ilustrações** mantendo o padrão (incluindo prompt-template para gerar com IA), veja [`docs/CREATING_VISUALS.md`](./docs/CREATING_VISUALS.md).
 
 ---
 
