@@ -197,25 +197,59 @@ export default function App() {
         </div>
       </Section>
 
-      {/* Illustrations gallery — all 6 */}
+      {/* Illustrations gallery — categorized by RevTrue narrative */}
       <Section tone="dark" className="bg-true-950">
         <Badge variant="rev" className="mb-4">Ícones · Ilustrações</Badge>
         <h2 className="font-display font-black text-4xl mb-2">Illustration</h2>
-        <p className="font-sans text-true-300 mb-8 max-w-2xl">
-          {illustrationNames.length} cenas isométricas em SVG inline, recoloríveis e infinitamente
-          escaláveis. Inspiradas no estilo Winning By Design, adaptadas à dualidade rev/true.
+        <p className="font-sans text-true-300 mb-12 max-w-2xl">
+          {illustrationNames.length} cenas isométricas em SVG inline, organizadas pela narrativa
+          comercial da RevTrue — funil, pilares, sessão de receita, infra cross-cutting e
+          conceitos de problema/caminho.
         </p>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {illustrationNames.map((name) => (
-            <div
-              key={name}
-              className="rounded-2xl bg-true-900 border border-true-800 p-6 flex flex-col gap-4"
-            >
-              <Illustration name={name} className="aspect-[4/3] w-full" />
-              <code className="font-sans text-xs text-true-400">{name}</code>
+
+        {[
+          {
+            badge: "P1 · Funil de Receita (5 etapas)",
+            names: ["funnel-marketing", "funnel-qualification", "funnel-sales", "funnel-postsale", "funnel-expansion"] as const,
+          },
+          {
+            badge: "P2 · Pilares do Método (AI · Dados · Método)",
+            names: ["pillar-ai", "pillar-data", "pillar-method"] as const,
+          },
+          {
+            badge: "P3 · Sessão de Receita & Entregáveis",
+            names: ["revenue-session", "priority-plan", "bottleneck-diagnosis"] as const,
+          },
+          {
+            badge: "P4 · Cross-cutting (infra)",
+            names: ["automation-flow", "commercial-ritual", "goal-target", "connected-system"] as const,
+          },
+          {
+            badge: "P5 · Problema & Caminhos",
+            names: ["revenue-leak", "path-solo", "path-together"] as const,
+          },
+          {
+            badge: "Base · Jornada & Construção",
+            names: ["bowtie-journey", "growth-stairs", "map-route", "stack-build", "funnel-wings"] as const,
+          },
+        ].map((group) => (
+          <div key={group.badge} className="mb-12 last:mb-0">
+            <h3 className="font-display font-bold text-rev-500 text-sm uppercase tracking-wider mb-6">
+              {group.badge}
+            </h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {group.names.map((name) => (
+                <div
+                  key={name}
+                  className="rounded-2xl bg-true-900 border border-true-800 p-6 flex flex-col gap-4 hover:border-rev-500/40 transition"
+                >
+                  <Illustration name={name} className="aspect-[4/3] w-full" />
+                  <code className="font-sans text-xs text-true-400">{name}</code>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </Section>
 
       {/* Brand icons (themed illustrations) */}

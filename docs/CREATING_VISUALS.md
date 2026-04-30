@@ -2,6 +2,36 @@
 
 Guia para adicionar **novas ilustrações isométricas** mantendo a consistência visual do design system. O estilo é inspirado no Winning By Design, adaptado à dualidade **rev** (energia/laranja) + **true** (confiança/charcoal).
 
+## Mapeamento conceito → componente
+
+Use esta tabela ao construir LP / apresentação comercial. Cada conceito da narrativa RevTrue tem ilustração dedicada:
+
+| Camada | Conceito | Componente |
+|---|---|---|
+| **Funil (P1)** | Marketing — canais, oferta, posicionamento | `funnel-marketing` |
+| | Qualificação — inbound, outbound, ICP | `funnel-qualification` |
+| | Vendas — pessoas, processo, rituais | `funnel-sales` |
+| | Pós-venda — onboarding, jornada, CS | `funnel-postsale` |
+| | Expansão — upsell, retenção, NRR | `funnel-expansion` |
+| **Pilares (P2)** | AI — núcleo inteligente | `pillar-ai` |
+| | Dados — camadas / cubo grid | `pillar-data` |
+| | Método — planta baixa / blueprint | `pillar-method` |
+| **Sessão (P3)** | Sessão de Receita | `revenue-session` |
+| | Plano priorizado | `priority-plan` |
+| | Diagnóstico / gargalo | `bottleneck-diagnosis` |
+| **Cross-cutting (P4)** | CRM / hub central | `connected-system` |
+| | Automação | `automation-flow` |
+| | Rituais comerciais | `commercial-ritual` |
+| | Metas | `goal-target` |
+| **Problema/Caminho (P5)** | Vazamento de receita | `revenue-leak` |
+| | Cliente solo | `path-solo` |
+| | Operar junto | `path-together` |
+| **Base / jornada** | Bowtie completo | `bowtie-journey` |
+| | Crescimento / trajetória | `growth-stairs` |
+| | Jornada do cliente | `map-route` |
+| | Construção de operação | `stack-build` |
+| | Funil de aquisição | `funnel-wings` |
+
 ---
 
 ## DNA visual — checklist de consistência
@@ -25,6 +55,16 @@ Toda ilustração nova precisa cumprir todos os itens abaixo:
 | **Stroke uniforme** | Não misture stroke-width. Use 1, 1.25, 1.5, 1.75, ou 2 — escolha 1 e mantenha. |
 
 ---
+
+## Helpers já no `Illustration.tsx`
+
+Antes de escrever SVG do zero, reutilize:
+
+### `<IsoBox gx={} gy={} w={} h={} d={18} active={false} />`
+Caixa isométrica completa (3 faces). `gx/gy` é o canto inferior-frontal-esquerdo. `active` aplica gradiente laranja, default usa charcoal.
+
+### `<Flag x={} y={} size={1} color="url(#rev-strong)" />`
+Bandeirinha pequena (~22px). Use como marcador de marco/meta. `size` escala proporcional.
 
 ## Primitivas (recipes prontos)
 
