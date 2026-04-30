@@ -12,3 +12,4 @@ storybook-static
 .env.local
 .env.*.local
 tsconfig.tsbuildinfo
+dist-tsbuildinfo
