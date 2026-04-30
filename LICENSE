@@ -1,0 +1,21 @@
+RevTrue Design System — All Rights Reserved
+
+Copyright (c) 2026 RevTrue. All rights reserved.
+
+The RevTrue name, logo, marks, color scheme, typography combinations, and
+brand identity assets contained in this repository are the exclusive property
+of RevTrue. They may NOT be copied, modified, distributed, or used in any
+form, in whole or in part, without prior written permission.
+
+The reference source code (React components, design tokens, build scripts,
+and configuration files) is published for reference and integration in
+projects authorized by RevTrue. It may be read, studied, and adapted in
+those authorized contexts. Redistribution or use outside that scope is not
+permitted without prior written permission.
+
+Third-party assets included in this repository remain under their own
+licenses:
+  - Roboto and Roboto Condensed: Apache License 2.0 (Google)
+  - Hongkong: per its original font license (see vendor)
+
+For permissions and inquiries, contact the project owner.

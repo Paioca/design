@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Hongkong (display font) ---- */
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Hairline.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-HairlineItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-ThinItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hongkong";
+  src: url("/src/fonts/hongkong/Hongkong-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---- CSS custom properties (design tokens) ---- */
+:root {
+  /* Brand */
+  --rev: #f15a24;
+  --true: #2f3e47;
+
+  /* Orange scale */
+  --rev-50: #fef3ee;
+  --rev-100: #fde3d5;
+  --rev-200: #fac1a1;
+  --rev-300: #f69466;
+  --rev-400: #f37a45;
+  --rev-500: #f15a24;
+  --rev-600: #d9430f;
+  --rev-700: #b5340d;
+  --rev-800: #912a11;
+  --rev-900: #762512;
+  --rev-950: #401007;
+
+  /* Charcoal scale */
+  --true-50: #f5f7f8;
+  --true-100: #e7eced;
+  --true-200: #d0d8dd;
+  --true-300: #a8b7bf;
+  --true-400: #7a8e99;
+  --true-500: #5c7280;
+  --true-600: #4a5c68;
+  --true-700: #3d4b55;
+  --true-800: #2f3e47;
+  --true-900: #21303a;
+  --true-950: #131d24;
+
+  /* Type */
+  --font-display: "Hongkong", system-ui, sans-serif;
+  --font-sans: "Roboto", system-ui, sans-serif;
+  --font-condensed: "Roboto Condensed", system-ui, sans-serif;
+
+  /* Surface */
+  --bg: #ffffff;
+  --bg-subtle: var(--true-50);
+  --fg: var(--true-900);
+  --fg-subtle: var(--true-600);
+  --border: var(--true-200);
+}
+
+/* ---- Base ---- */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--rev);
+  color: white;
+}
