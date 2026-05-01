@@ -21,11 +21,11 @@ import {
 } from "./components";
 
 const palette = [
-  { name: "rev-500", hex: "#F15A24", textDark: false },
-  { name: "rev-600", hex: "#D9430F", textDark: false },
+  { name: "rev-500", hex: "#E8693B", textDark: false },
+  { name: "rev-600", hex: "#D55829", textDark: false },
   { name: "rev-100", hex: "#FDE3D5", textDark: true },
-  { name: "true-900", hex: "#21303A", textDark: false },
-  { name: "true-800", hex: "#2F3E47", textDark: false },
+  { name: "true-900", hex: "#1E232C", textDark: false },
+  { name: "true-800", hex: "#14181F", textDark: false },
   { name: "true-100", hex: "#E7ECED", textDark: true },
   { name: "white", hex: "#FFFFFF", textDark: true },
 ];
@@ -91,7 +91,7 @@ export default function App() {
             <div
               key={c.name}
               className="rounded-2xl p-6 h-32 flex flex-col justify-between border border-true-100"
-              style={{ background: c.hex, color: c.textDark ? "#21303A" : "#FFF" }}
+              style={{ background: c.hex, color: c.textDark ? "#1E232C" : "#FFF" }}
             >
               <span className="font-display font-bold uppercase">{c.name}</span>
               <span className="font-sans text-xs opacity-80">{c.hex}</span>

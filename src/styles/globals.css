@@ -105,8 +105,8 @@
 /* ---- CSS custom properties (design tokens) ---- */
 :root {
   /* Brand */
-  --rev: #f15a24;
-  --true: #2f3e47;
+  --rev: #e8693b;
+  --true: #14181f;
 
   /* Orange scale */
   --rev-50: #fef3ee;
@@ -114,9 +114,9 @@
   --rev-200: #fac1a1;
   --rev-300: #f69466;
   --rev-400: #f37a45;
-  --rev-500: #f15a24;
-  --rev-600: #d9430f;
-  --rev-700: #b5340d;
+  --rev-500: #e8693b;
+  --rev-600: #d55829;
+  --rev-700: #b8461e;
   --rev-800: #912a11;
   --rev-900: #762512;
   --rev-950: #401007;
@@ -130,9 +130,9 @@
   --true-500: #5c7280;
   --true-600: #4a5c68;
   --true-700: #3d4b55;
-  --true-800: #2f3e47;
-  --true-900: #21303a;
-  --true-950: #131d24;
+  --true-800: #14181f;
+  --true-900: #1e232c;
+  --true-950: #0e1117;
 
   /* Type */
   --font-display: "Hongkong", system-ui, sans-serif;

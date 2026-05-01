@@ -4,8 +4,8 @@
 
 A RevTrue é uma consultoria de vendas. A marca foi construída sobre a tensão produtiva entre **rev** e **true**:
 
-- **rev** — energia, ação, movimento, agilidade. Cor: laranja avermelhado `#F15A24`.
-- **true** — sinceridade, confiança, profissionalismo. Cor: charcoal `#2F3E47`.
+- **rev** — energia, ação, movimento, agilidade. Cor: laranja avermelhado `#E8693B`.
+- **true** — sinceridade, confiança, profissionalismo. Cor: charcoal `#14181F`.
 
 A combinação traduz a promessa da consultoria: agir rápido, mas com base em diagnóstico real.
 

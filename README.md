@@ -14,8 +14,8 @@
 **Personalidade dual:** *rev* (energia, ação, laranja) + *true* (sinceridade, confiança, cinza escuro)
 
 **Cores primárias:**
-- `#F15A24` — laranja avermelhado (`rev`) — usado em CTAs, destaques, links, ícones de ação
-- `#2F3E47` — cinza escuro / charcoal (`true`) — usado em fundos escuros, texto principal, elementos institucionais
+- `#E8693B` — laranja avermelhado (`rev`) — usado em CTAs, destaques, links, ícones de ação
+- `#14181F` — cinza escuro / charcoal (`true`) — usado em fundos escuros, texto principal, elementos institucionais
 - Branco `#FFFFFF` e neutros derivados de `true`
 
 **Tipografia:**
@@ -35,14 +35,18 @@
 ### Marca
 | Token | Hex | Uso |
 |---|---|---|
-| `rev` | `#F15A24` | Primária — CTAs, destaque, ações |
-| `true` | `#2F3E47` | Secundária — fundos escuros, texto, institucional |
+| `rev` | `#E8693B` | Primária — CTAs, destaque, ações |
+| `true` | `#14181F` | Secundária — fundos escuros, texto, institucional |
 
 ### Escala laranja (`rev-*`)
-`50: #FEF3EE` · `100: #FDE3D5` · `200: #FAC1A1` · `300: #F69466` · `400: #F37A45` · **`500: #F15A24`** · `600: #D9430F` · `700: #B5340D` · `800: #912A11` · `900: #762512` · `950: #401007`
+`50: #FEF3EE` · `100: #FDE3D5` · `200: #FAC1A1` · `300: #F69466` · `400: #F37A45` · **`500: #E8693B`** · `600: #D55829` · `700: #B8461E` · `800: #912A11` · `900: #762512` · `950: #401007`
 
 ### Escala charcoal (`true-*`)
-`50: #F5F7F8` · `100: #E7ECED` · `200: #D0D8DD` · `300: #A8B7BF` · `400: #7A8E99` · `500: #5C7280` · `600: #4A5C68` · `700: #3D4B55` · **`800: #2F3E47`** · `900: #21303A` · `950: #131D24`
+`50: #F5F7F8` · `100: #E7ECED` · `200: #D0D8DD` · `300: #A8B7BF` · `400: #7A8E99` · `500: #5C7280` · `600: #4A5C68` · `700: #3D4B55` · **`800: #14181F`** · `900: #1E232C` · `950: #0E1117`
+
+### Surfaces neutras (paleta v3 ampliada)
+- `cream` `#F6F3EE` — fundo claro alternado em sections "light"
+- `paper` `#FBFAF7` — surface ainda mais clara (cards sobre cream)
 
 ### Semântico
 - Background: `#FFFFFF` · Background sutil: `true-50`
@@ -51,9 +55,9 @@
 - Primário: `rev-500` · Hover: `rev-600` · Active: `rev-700`
 
 ### Gradientes oficiais
-- `rev-gradient`: `linear-gradient(135deg, #F15A24 0%, #D9430F 100%)`
-- `true-gradient`: `linear-gradient(135deg, #2F3E47 0%, #131D24 100%)`
-- `rev-true-gradient`: `linear-gradient(135deg, #F15A24 0%, #2F3E47 100%)`
+- `rev-gradient`: `linear-gradient(135deg, #E8693B 0%, #D55829 100%)`
+- `true-gradient`: `linear-gradient(135deg, #14181F 0%, #0E1117 100%)`
+- `rev-true-gradient`: `linear-gradient(135deg, #E8693B 0%, #14181F 100%)`
 
 ---
 
